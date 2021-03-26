@@ -1,0 +1,242 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0px auto;
+}
+
+h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+
+/*   CABEÇALHO   */
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background: #E0E0E0;
+    align-items: center;   
+    justify-content: center;
+}
+
+
+#titulo{    
+   
+    font-size: 1em;
+    width: 42%;
+    padding-left: 15px;
+    border: 1px red solid;
+}
+
+#menu{ 
+    
+    background: white;
+    padding: 10px; 
+    
+    
+}
+
+#menu a{
+    text-decoration: none;
+    padding: 5px; 
+    text-align: justify;
+    color: #333333;
+    
+}
+
+.bordas {
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+a:hover {
+    background-color: #d3d2d2;
+}
+
+
+#menu-burguer{
+    margin-right: 20px;
+    visibility: hidden;
+    position: ;
+    
+}
+
+#menu-burguer div{
+border: solid 3px;
+margin: 4px;
+width: 20px;
+}
+
+
+
+
+
+#conteudo{
+
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    align-items: center;
+    
+
+}
+
+
+
+
+/*      TRANSAÇÃO        */
+
+
+#transacao {
+    border: black 1px solid;
+    width: 90% ;
+    height: 344px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    border: 1px solid #979797;  
+    border-radius: 4px;
+    
+}
+
+
+form {
+  
+  
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    height: 36px;  
+    margin: 2px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 2px solid;
+}
+
+input{
+    height: 32px;
+    margin: 2px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+button{
+    background-color: #333333;
+    color: white;
+    height: 32px;
+    border-radius: 4px;
+}
+
+
+/*      EXTRATO        */
+
+
+#extrato{
+    width: 90% ;
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+td{
+    border-bottom: 1px solid #979797;
+    border-collapse: collapse;
+    padding: 10px 20px;
+    word-spacing: 20px;
+    
+}
+
+th{
+  
+   padding: 10px 20px 0px 50px ;
+    
+}
+
+.direita {
+    text-align: right;
+    word-spacing: 0px;    
+}
+
+.rodape th {
+    border-bottom: none;
+    border-top: 1px solid #979797;
+    margin-top: 5px;
+    padding-bottom: 0;
+
+
+}
+
+
+.lucro {
+    border: none;
+    text-align:right;
+    padding: 0 30px 0 0;
+    font-size: 0.7em;
+}
+
+
+@media (max-width: 800px) {
+
+
+}
+
+
+
+@media (max-width: 800px) {
+    header {
+          
+        justify-content: space-between;
+    }
+
+    #conteudo{
+
+        display: flex;
+        flex-direction: column;
+      
+    }
+ 
+    #menu{
+        visibility: hidden;
+    }
+
+    
+    #menu-burguer {
+
+        visibility: visible;
+    }
+    
+    #titulo{
+      
+        text-align: center;
+        position: relative;
+    }
+    
+
+}
+
+
+      
+       

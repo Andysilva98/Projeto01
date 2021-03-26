@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto01</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="estilo2.css">
+   </head>
+   
+    <body>
+      
+        <header>
+            <div id="logo-titulo">
+                
+                <img src="imagens/Ellipse 13.png" alt="">
+                                    
+                <h2>Controle financeiro</h2>
+                
+            </div>
+
+            <div id="menu">
+            
+                <a href="">Cadastro de transações</a> 
+                <a href="" class="bordas">Limpar dados</a>
+                <a href="">Salvar no servidor</a>
+            
+            </div>      
+
+            <div id="menu-burguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            
+            
+        </header>
+
+        <div id="conteudo">
+            <div id="transacao">
+                <h3>Nova Transação</h3> 
+                
+                <form>
+                    <div>
+                        <label>Tipo de transação</label>
+                        <select>
+                            <option>Compra</option>
+                            <option>Venda</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Nome da mercadoria</label>
+                        <input placeholder="Input" type="text" required name="">
+                    </div>
+
+                    <div>
+                        <label>Valor</label>
+                        <input placeholder="R$ 0,00" type="number" required name="">
+                    </div>
+                    
+                    <div>    
+                        <button>Enviar</button>
+                    </div>    
+                </form>
+            </div>
+
+            <div id="extrato">
+                <h3>Extrato de Transações</h3>
+                
+                <Table>
+                    <tr>
+                        <th></th>
+                        <th>Mercadoria</th>
+                        <th class="direita">Valor</th>
+                    </tr>
+                    <tr>
+                        <td class="tamanho">+</td>
+                        <td>Smartphone</td>
+                        <td class="direita">R$ 1.299,99</td>
+                    </tr>
+                    <tr>
+                        <td class="tamanho">-</td>
+                        <td>Notebook</td>
+                        <td class="direita">R$ 2.599,99</td>
+                    </tr>
+                    <tr>
+                        <td class="tamanho">+</td>
+                        <td>Tablet</td>
+                        <td class="direita">R$ 499,99</td>
+                    </tr>
+                    <tr class="rodape">
+                        <td class="tamanho"></td>
+                        <td >Total</td>
+                        <td class="direita">R$ 4.399,97</td>
+                        
+                    </tr>
+                    <!--
+                    <tr class="lucro">                            
+                        <td >[LUCRO]</td>
+                    </tr> -->
+                </Table>
+
+            </div>
+
+
+        </div>
+
+     
+    </body>
+</html>

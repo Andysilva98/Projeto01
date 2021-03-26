@@ -1,0 +1,340 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h3 {
+ text-align: center;
+}
+
+
+
+
+/*      HEADER      */
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 80px;
+    width: 100%;
+    background-color: #E0E0E0;
+}
+
+#logo-titulo {
+    display: flex;
+    flex-direction: row;
+    border: solid red 2px;
+    padding: 4px;
+    align-items: center;
+    margin: 0 auto ;
+}
+
+h2{
+    margin-left: 8px;
+}
+
+#menu {
+    border: red solid 2px;
+    margin: 0 auto ;
+    background-color: white;
+    padding: 8px 2px;
+
+   
+}
+
+#menu a{
+    color: black;
+    padding: 3px;
+  
+}
+
+a:hover{
+    background-color: #b8b6b6;
+}
+
+.bordas {
+    
+    border-left: black 1px solid ;
+    border-right: black 1px solid ;
+}
+
+#menu-burguer div{
+    border-top: 3px solid;
+    width: 30px;
+    margin: 5px 20px 5px 0;
+    visibility: hidden;
+}
+    
+
+
+/*      CONTEUDO      */
+
+
+
+
+#conteudo{
+
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    border: orangered 2PX solid;
+
+}
+
+
+
+/*      TRANSAÇÃO      */
+
+
+
+
+#transacao {
+    border: black 1px solid;
+    width: 400px ;
+    height: 344px;
+    margin-right: 15px;
+    border: 1px solid #979797;  
+    border-radius: 4px;
+    padding: 15px;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    height: 36px;  
+    margin: 2px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 2px solid;
+}
+
+input{
+    height: 32px;
+    margin: 2px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+button{
+    background-color: #333333;
+    color: white;
+    height: 32px;
+    border-radius: 4px;
+}
+
+
+
+
+
+/*      EXTRATO        */
+
+
+
+
+#extrato{
+    width: 90%;
+    height: 281px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: solid red 2px;
+    padding: 15px;
+}
+
+td{
+    border-bottom: 1px solid #979797;
+    border-collapse: collapse;
+    padding: 10px 20px 10px 0;
+    
+}
+
+th{
+  
+   padding: 10px 20px 10px 0;   
+}
+
+.direita {
+    text-align: right;
+}
+
+.rodape td {
+    border-bottom: none;
+    border-top: 1px solid #979797;
+    margin-top: 0px;
+    font-weight: bold;
+  
+}
+
+.tamanho{
+   width: 1px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+
+.lucro td {
+    border: 1px solid ;
+    text-align: right;
+    justify-content: right;
+    font-size: 0.7em;
+}
+
+
+
+
+
+/*      RESPONSIVO      */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #menu{
+        
+        float: right ;
+        display: flex ;
+        flex-direction: column;
+        height: 1000px;
+        margin-top: 940px;
+        width: 400px;
+        margin-right: -50px;
+        background-color:#333333;
+        padding-top: 100px;
+    }
+
+    #menu a{
+        color: white;
+        padding: 10px;
+        text-align: right;
+    }
+
+
+
+    #menu-burguer div{
+        visibility: visible;
+    }
+
+    #logo-titulo {       
+        width: 100%; 
+        justify-content: space-between;
+    }
+
+    h2 {
+        margin: 0 auto;
+
+    }
+
+    #menu-burguer:hover{
+        
+
+    }
+
+
+    /*      CONTEUDO      */
+
+
+
+
+    #conteudo{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*      TRANSAÇÃO        */
+
+
+
+
+    #transacao {
+        border: black 1px solid;
+        width: 90% ;
+        height: auto;
+        margin: 0 0 20px 0;
+        
+    }
+
+    form {
+   
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px 0;
+        align-items: center;
+    
+    }
+
+    form div{
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 411px){
+
+    #transacao {
+
+        width: 90% ;
+        height: 344px;
+        padding: 15px;
+
+    }
+    
+    form { 
+        display: flex;
+        flex-direction: column;
+        flex-flow:;
+        padding: 20px 10px;
+    
+    }
+    
+    form div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+    
+   
+    
+ }
+
