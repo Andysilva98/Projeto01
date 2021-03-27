@@ -37,7 +37,6 @@ header{
 #logo-titulo {
     display: flex;
     flex-direction: row;
-    border: solid red 2px;
     padding: 4px;
     align-items: center;
     margin: 0 auto ;
@@ -48,7 +47,7 @@ h2{
 }
 
 #menu {
-    border: red solid 2px;
+
     margin: 0 auto ;
     background-color: white;
     padding: 8px 2px;
@@ -93,8 +92,6 @@ a:hover{
     display: flex;
     flex-direction: row;
     max-width: 1100px;
-    border: orangered 2PX solid;
-
 }
 
 
@@ -114,10 +111,12 @@ a:hover{
     padding: 15px;
 }
 
+
 form { 
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
+    
 
 }
 
@@ -141,6 +140,7 @@ input{
     margin-bottom: 20px;
     border-radius: 4px;
     padding-left: 10px;
+    flex-grow: 1;
 }
 
 button{
@@ -165,7 +165,6 @@ button{
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: solid red 2px;
     padding: 15px;
 }
 
@@ -233,7 +232,11 @@ th{
         margin-right: -50px;
         background-color:#333333;
         padding-top: 100px;
+        z-index: 2;
+        visibility: hidden;
     }
+
+    
 
     #menu a{
         color: white;
@@ -252,15 +255,7 @@ th{
         justify-content: space-between;
     }
 
-    h2 {
-        margin: 0 auto;
 
-    }
-
-    #menu-burguer:hover{
-        
-
-    }
 
 
     /*      CONTEUDO      */
@@ -295,13 +290,14 @@ th{
         flex-flow: row wrap;
         padding: 20px 0;
         align-items: center;
-    
+        
     }
 
     form div{
         display: flex;
         flex-direction: column;
         margin: 3px;
+        flex-grow: 1 ;
     }
 
 
@@ -321,7 +317,7 @@ th{
     form { 
         display: flex;
         flex-direction: column;
-        flex-flow:;
+        
         padding: 20px 10px;
     
     }
@@ -330,6 +326,7 @@ th{
         display: flex;
         flex-direction: column;
         width: 100%;
+        
     }
     
     
