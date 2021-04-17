@@ -1,111 +1,112 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Projeto01</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="estilo2.css">
-   </head>
-   
-    <body>
-      
-        <header>
-            <div id="logo-titulo">
-                
-                <img src="imagens/Ellipse 13.png" alt="">
-                                    
-                <h2>Controle financeiro</h2>
-                
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Controle Financeiro</title>
+</head>
+<body>
+
+    <div id="menu-container">
+        <nav class="menu">
+            <div class="navegacao">
+                <img src="imagens/logo.png" alt="Logo">
+                <h1>Controle Financeiro</h1>
+                <a id="menu-icone"><img src="imagens/menu.svg" alt="menu"></a>
             </div>
-
-            <div id="menu">
-            
-                <a href="">Cadastro de transações</a> 
-                <a href="" class="bordas">Limpar dados</a>
-                <a href="">Salvar no servidor</a>
-            
-            </div>      
-
-            <div id="menu-burguer">
-                <div></div>
-                <div></div>
-                <div></div>
-                
+            <div class="lista-menu">
+                <ul>
+                    <li><a id="limpar-dados">Limpar Dados</a></li>
+                    <li><a id="cadastro-transacoes">Cadastro de Transações</a></li>
+                    <li><a id="salvar-servidor">Salvar no Servidor</a></li>
+                </ul>
             </div>
+        </nav>
 
+        <div class="fundo-menu-lateral esconder" id="fundo-menu-lateral">
+            <nav class="menu-lateral">
+                <img 
+                    src="imagens/icone.png" 
+                    class="icone-fechar" 
+                    id="icone-fechar" 
+                    alt="Ícone fechar menu lateral"
+                />
+                <ul>
+                    <li><a id="limpar-dados-lateral">Limpar Dados</a></li>
+                    <li><a id="cadastro-transacoes-lateral">Cadastro de Transações</a></li>
+                    <li><a id="salvar-servidor-lateral">Salvar no Servidor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="conteudo">
+
+        <div id="formulario">
+            <h2>Nova transação</h2>
+            <form>
+                <div class="container-input">
+                    <label for="tipo">Tipo de transação</label>
+                    <select id="tipo">
+                        <option disabled selected value="">Selecione</option>
+                        <option value="compra">Compra</option>
+                        <option value="venda">Venda</option>
+                    </select>
+                    <span id="validar-tipo">Selecione o tipo da transação</span>
+                </div>
+
+                <div class="container-input">
+                    <label for="nome-mercadoria">Nome da mercadoria</label>
+                    <input type="text" id="nome-mercadoria" placeholder="Input"/>
+                    <span id="validar-mercadoria">Este campo deve estar preenchido</span>
+                </div>
+
+                <div class="container-input">
+                    <label for="valor">Valor</label>
+                    <input autocomplete="off" type="text" id="valor" placeholder="R$ 0,00" maxlength="13"/>
+                    <span id="valor-erro1">Este campo deve estar preenchido com numeros</span>
+                    <span id="valor-erro2">Este campo deve</span>
+                   
+                </div>
+            </form>
             
-            
-        </header>
-
-        <div id="conteudo">
-            <div id="transacao">
-                <h3>Nova Transação</h3> 
-                
-                <form>
-                    <div>
-                        <label>Tipo de transação</label>
-                        <select>
-                            <option>Compra</option>
-                            <option>Venda</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Nome da mercadoria</label>
-                        <input placeholder="Input" type="text" required name="">
-                    </div>
-
-                    <div>
-                        <label>Valor</label>
-                        <input placeholder="R$ 0,00" type="number" required name="">
-                    </div>
-                    
-                    <div>    
-                        <button>Enviar</button>
-                    </div>    
-                </form>
+        
+            <div class="container-button">
+                <button type="submit" class="adicionar" id="btn-add">Adicionar transação</button>
             </div>
-
-            <div id="extrato">
-                <h3>Extrato de Transações</h3>
-                
-                <Table>
-                    <tr>
-                        <th></th>
-                        <th>Mercadoria</th>
-                        <th class="direita">Valor</th>
-                    </tr>
-                    <tr>
-                        <td class="tamanho">+</td>
-                        <td>Smartphone</td>
-                        <td class="direita">R$ 1.299,99</td>
-                    </tr>
-                    <tr>
-                        <td class="tamanho">-</td>
-                        <td>Notebook</td>
-                        <td class="direita">R$ 2.599,99</td>
-                    </tr>
-                    <tr>
-                        <td class="tamanho">+</td>
-                        <td>Tablet</td>
-                        <td class="direita">R$ 499,99</td>
-                    </tr>
-                    <tr class="rodape">
-                        <td class="tamanho"></td>
-                        <td >Total</td>
-                        <td class="direita">R$ 4.399,97</td>
-                        
-                    </tr>
-                    <!--
-                    <tr class="lucro">                            
-                        <td >[LUCRO]</td>
-                    </tr> -->
-                </Table>
-
-            </div>
-
-
         </div>
 
-     
-    </body>
+
+        <div id="extrato">
+            <h2>Extrato de transações</h2>
+
+            <div id="lista-transacoes">
+                <div class="descricao">
+                    <h3>Mercadoria</h3>
+                    <h3>Valor</h3>
+                </div>
+                
+                <div id="container-transacoes"></div>
+
+                <div class="resumo-transacoes">
+
+                    <strong>Total</strong>
+                    <div class="resultado">
+                        <strong id="resultado-total">R$ 12.909,99</strong>
+                        <span id="sentenca">[LUCRO]</span>
+                    </div>
+
+                </div>
+            </div>
+            <p id="sem-transacoes">Não há transações cadastradas</p>
+        </div>
+
+    </section>
+
+</body>
 </html>
